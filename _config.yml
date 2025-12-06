@@ -1,16 +1,14 @@
 # Site settings
 title: My Blog
 description: A simple blog with multilingual support
-baseurl: ""
+baseurl: "/blog"
 url: "https://yourusername.github.io"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:year/:month/:day/:title/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+plugins: []
 
 # Collections
 collections:

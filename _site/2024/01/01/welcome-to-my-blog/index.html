@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Blog - My Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="/" class="nav-home">&larr; Back to Home</a>
+    </nav>
+
+    <article class="post">
+        
+
+        <header class="post-header">
+            <h1 class="post-title">Welcome to My Blog</h1>
+            <time datetime="2024-01-01T15:30:00+05:30" class="post-date">
+                January 01, 2024
+            </time>
+            
+            <span class="post-language">English</span>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="welcome-to-my-blog">Welcome to My Blog</h1>
+
+<p>This is the first post on my new blog! I’m excited to share my thoughts and experiences with you.</p>
+
+<h2 id="about-this-blog">About This Blog</h2>
+
+<p>This blog supports both English and Sinhala content, making it accessible to a wider audience. The Admin Dashboard allows me to easily create and manage posts without writing any code.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Easy Content Management</strong>: Powered by Decap CMS</li>
+  <li><strong>Multilingual Support</strong>: English and Sinhala</li>
+  <li><strong>Responsive Design</strong>: Works on all devices</li>
+  <li><strong>Automatic Page Generation</strong>: New posts create their own pages automatically</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>To access the admin panel, navigate to <code class="language-plaintext highlighter-rouge">/admin/</code> on your site. From there, you can:</p>
+
+<ol>
+  <li>Create new blog posts</li>
+  <li>Edit existing posts</li>
+  <li>Upload images</li>
+  <li>Manage content in multiple languages</li>
+</ol>
+
+<p>Thank you for visiting, and I hope you enjoy reading my posts!</p>
+
+        </div>
+
+        <footer class="post-footer">
+            <p>Published on January 01, 2024</p>
+            <a href="/" class="back-to-posts">&larr; Back to all posts</a>
+        </footer>
+    </article>
+
+    <script>
+        // Handle RTL for Sinhala
+        if (document.querySelector('html').getAttribute('lang') === 'si') {
+            document.body.style.direction = 'rtl';
+        }
+    </script>
+</body>
+</html>

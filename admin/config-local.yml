@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: file-system
+  api_root: api  # This creates a local API for managing files
 
 media_folder: "assets/images"
-public_folder: "/blog/assets/images"  # Updated to match baseurl
+public_folder: "/blog/assets/images"
 
 collections:
   - name: "blog"
@@ -29,7 +29,3 @@ collections:
           default: "en"
         }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-
-# For local development without authentication
-# Uncomment this for local testing ONLY:
-# local_backend: true
