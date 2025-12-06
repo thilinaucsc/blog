@@ -1,6 +1,6 @@
 backend:
-  name: file-system
-  api_root: api  # This creates a local API for managing files
+  name: git-gateway
+  branch: main
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
