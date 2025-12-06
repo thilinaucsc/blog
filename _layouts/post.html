@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ page.language | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="/" class="nav-home">&larr; Back to Home</a>
+    </nav>
+
+    <article class="post">
+        {% if page.thumbnail %}
+        <div class="post-thumbnail">
+            <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
+                {{ page.date | date: "%B %d, %Y" }}
+            </time>
+            {% if page.language == 'si' %}
+            <span class="post-language">සිංහල</span>
+            {% else %}
+            <span class="post-language">English</span>
+            {% endif %}
+        </header>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <footer class="post-footer">
+            <p>Published on {{ page.date | date: "%B %d, %Y" }}</p>
+            <a href="/" class="back-to-posts">&larr; Back to all posts</a>
+        </footer>
+    </article>
+
+    <script>
+        // Handle RTL for Sinhala
+        if (document.querySelector('html').getAttribute('lang') === 'si') {
+            document.body.style.direction = 'rtl';
+        }
+    </script>
+</body>
+</html>
