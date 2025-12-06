@@ -1,0 +1,15 @@
+[build]
+  # This builds the Jekyll site
+  command = "bundle install && bundle exec jekyll build"
+  # This is the directory that Jekyll builds to
+  publish = "_site"
+
+[build.environment]
+  # Set the Ruby version
+  RUBY_VERSION = "3.2"
+
+# Redirect from the old baseurl to the new one if needed
+[[redirects]]
+  from = "/blog/*"
+  to = "/:splat"
+  status = 301

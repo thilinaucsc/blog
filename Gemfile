@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.0"
 
+# This is the important part - specify Ruby version for Netlify
+ruby ">= 3.0.0"
+
 # Only these essential plugins
 group :jekyll_plugins do
   gem "jekyll-feed"
