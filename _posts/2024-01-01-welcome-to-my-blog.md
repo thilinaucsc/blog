@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to My Blog
 date: 2024-01-01 10:00:00
-thumbnail: /assets/images/welcome.jpg
+# thumbnail: /assets/images/welcome.jpg  # Uncomment when you have an image
 excerpt: This is the first post on my new blog. I'm excited to share my thoughts and experiences with you in both English and Sinhala!
 language: en
 ---
